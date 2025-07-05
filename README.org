@@ -25,7 +25,32 @@ A modern, responsive theme for Org-mode HTML exports featuring light/dark mode t
 
 ** 🚀 Quick Start
 
-*** Installation
+*** Usage (Web-hosted - Recommended)
+No installation required! Simply add these lines to your org file:
+
+**** Method 1: Direct CDN Links
+Add these lines to the top of your org file:
+
+#+begin_src org
+,#+HTML_HEAD: <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/chongchonghe/modern-theme-for-org-export@main/modernorg.css" />
+,#+HTML_HEAD_EXTRA: <script src="https://cdn.jsdelivr.net/gh/chongchonghe/modern-theme-for-org-export@main/theme-toggle.js"></script>
+#+end_src
+
+**** Method 2: Using the Setupfile (Easiest)
+Download the setupfile and add this line at the top of your org file:
+
+#+begin_src org
+,#+SETUPFILE: path/to/default.setup
+#+end_src
+
+You can download the setupfile directly:
+#+begin_src shell
+wget https://raw.githubusercontent.com/chongchonghe/modern-theme-for-org-export/main/default.setup
+#+end_src
+
+*** Local Installation (For Customization Only)
+Only clone this repository if you want to customize or contribute to the theme:
+
 1. Clone this repository:
    #+begin_src shell
    git clone https://github.com/chongchonghe/modern-theme-for-org-export.git
@@ -33,24 +58,13 @@ A modern, responsive theme for Org-mode HTML exports featuring light/dark mode t
 
 2. Copy the files to your Org-mode setup directory:
    #+begin_src shell
-   cp modern-theme-for-org-export/* ~/.emacs.d/org-html-themes/
+   cp modern-theme-for-org-export/{modernorg.css,theme-toggle.js,default.setup} your/org/project/path/
    #+end_src
 
-*** Usage
-**** Method 1: Using the Setupfile (Recommended)
-Add this line at the top of your org file:
-
-#+begin_src org
-,#+SETUPFILE: path/to/default.setup
-#+end_src
-
-**** Method 2: Manual Setup
-Add these lines to your org file:
-
-#+begin_src org
-,#+HTML_HEAD: <link rel="stylesheet" href="path/to/modernorg.css" type="text/css" />
-,#+HTML_HEAD_EXTRA: <script src="path/to/theme-toggle.js"></script>
-#+end_src
+3. Update the path in default.setup and use local paths in your org file:
+   #+begin_src org
+   ,#+SETUPFILE: path/to/default.setup
+   #+end_src
 
 *** Export to HTML
 1. Open your org file in Emacs
@@ -58,7 +72,10 @@ Add these lines to your org file:
 3. Open the generated HTML file in a browser
 
 ** 🎨 Customization
-You can customize the theme by modifying the CSS variables in ~modernorg.css~:
+To customize the theme, you'll need to clone the repository and modify the files locally:
+
+1. First, follow the [[*Local Installation (For Customization Only)][Local Installation]] steps above
+2. Modify the CSS variables in ~modernorg.css~:
 
 #+begin_src css
 :root {
@@ -73,6 +90,8 @@ You can customize the theme by modifying the CSS variables in ~modernorg.css~:
     /* ... other variables ... */
 }
 #+end_src
+
+3. Update your org file to use the local paths instead of the CDN links
 
 ** 📚 Documentation
 - See =example.org= and =example.html= for a complete showcase of styled elements
