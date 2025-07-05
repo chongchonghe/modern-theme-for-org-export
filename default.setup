@@ -2,7 +2,7 @@
 
 #+LANGUAGE: en
 #+PROPERTY: header-args :results code replace :exports both :noweb yes :tangle no
-#+HTML_HEAD: <link rel="stylesheet" href="org3.css" type="text/css" />
+#+HTML_HEAD: <link rel="stylesheet" href="modernorg.css" type="text/css" />
 #+HTML_HEAD_EXTRA: <script src="theme-toggle.js"></script>
 #+EXPORT_EXCLUDE_TAGS: noexport
 #+OPTIONS: H:2 num:nil toc:t \\n:nil ::t |:t ^:{} -:t f:t *:t

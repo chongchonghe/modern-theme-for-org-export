@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-07-06 Sun 01:44 -->
+<!-- 2025-07-06 Sun 01:54 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Comprehensive Org-Mode Theme Example</title>
@@ -195,7 +195,7 @@
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { }
 </style>
-<link rel="stylesheet" href="org3.css" type="text/css" />
+<link rel="stylesheet" href="modernorg.css" type="text/css" />
 <script src="theme-toggle.js"></script>
 <script>
   window.MathJax = {
@@ -237,87 +237,87 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgfe0415a">Introduction</a>
+<li><a href="#org768e9f8">Introduction</a>
 <ul>
-<li><a href="#orgd381069">Text Formatting</a></li>
-<li><a href="#orga1d8198">Links and References</a></li>
+<li><a href="#orge1c7dc8">Text Formatting</a></li>
+<li><a href="#orgd93b9a1">Links and References</a></li>
 </ul>
 </li>
-<li><a href="#org4cdd3d4">Headings Hierarchy</a>
+<li><a href="#org9f7355d">Headings Hierarchy</a>
 <ul>
-<li><a href="#org762de9f">Second Level Heading</a></li>
+<li><a href="#orgf33f9b1">Second Level Heading</a></li>
 </ul>
 </li>
-<li><a href="#orgdf2e97e">Lists and Organization</a>
+<li><a href="#org94596b3">Lists and Organization</a>
 <ul>
-<li><a href="#orgd9f9a61">Unordered Lists</a></li>
-<li><a href="#org99a0486">Ordered Lists</a></li>
-<li><a href="#orgeb67d8d">Mixed Lists</a></li>
-<li><a href="#org07a4160">Definition Lists</a></li>
+<li><a href="#org34d3414">Unordered Lists</a></li>
+<li><a href="#org7a48183">Ordered Lists</a></li>
+<li><a href="#org048432f">Mixed Lists</a></li>
+<li><a href="#orgcac6420">Definition Lists</a></li>
 </ul>
 </li>
 <li><a href="#tables">Tables</a>
 <ul>
-<li><a href="#org9978746">Basic Table</a></li>
-<li><a href="#orgc8ecbc9">Table with Alignment</a></li>
+<li><a href="#orgcb11d60">Basic Table</a></li>
+<li><a href="#orge1149ca">Table with Alignment</a></li>
 </ul>
 </li>
-<li><a href="#orgbaf2cc2">Code Examples</a>
+<li><a href="#org6e8f21f">Code Examples</a>
 <ul>
-<li><a href="#org1098963">SQL Query</a></li>
-<li><a href="#org80e6dba">Calculator Expressions</a></li>
-<li><a href="#orga7fd22e">Example Block</a></li>
-<li><a href="#orgee70720">Verbatim Block</a></li>
-<li><a href="#orga03ed17">Shell Script</a></li>
-<li><a href="#org987f37b">JavaScript Code</a></li>
-<li><a href="#org6c767c4">Python Code with Results</a></li>
+<li><a href="#orgcd85fcd">SQL Query</a></li>
+<li><a href="#org28093d2">Calculator Expressions</a></li>
+<li><a href="#org24af3aa">Example Block</a></li>
+<li><a href="#org40657e2">Verbatim Block</a></li>
+<li><a href="#org9b4473c">Shell Script</a></li>
+<li><a href="#orgd1784cb">JavaScript Code</a></li>
+<li><a href="#org9b53776">Python Code with Results</a></li>
 </ul>
 </li>
-<li><a href="#org23cf905">Task Management</a>
+<li><a href="#org0815fd3">Task Management</a>
 <ul>
-<li><a href="#orgb420149"><span class="todo TODO">TODO</span> Items</a></li>
+<li><a href="#orgb938ddf"><span class="todo TODO">TODO</span> Items</a></li>
 </ul>
 </li>
-<li><a href="#orgf0eff19">Blockquotes and Citations</a></li>
-<li><a href="#org8fbb4e8">Timestamps and Scheduling</a>
+<li><a href="#orgc05643b">Blockquotes and Citations</a></li>
+<li><a href="#orge2acc01">Timestamps and Scheduling</a>
 <ul>
-<li><a href="#orgb13c4e1">Meeting Schedule</a></li>
-<li><a href="#org1369bb8">Time Tracking</a></li>
+<li><a href="#org6cfe88d">Meeting Schedule</a></li>
+<li><a href="#orgbbea87c">Time Tracking</a></li>
 </ul>
 </li>
-<li><a href="#org2cab951">Tags and Categories</a>
+<li><a href="#orgc0a0c57">Tags and Categories</a>
 <ul>
-<li><a href="#orgc2a3722">Programming Languages</a></li>
-<li><a href="#org1dda310">Research Topics</a></li>
+<li><a href="#org03f0e8b">Programming Languages</a></li>
+<li><a href="#orgee33966">Research Topics</a></li>
 </ul>
 </li>
-<li><a href="#org3a73562">Special Elements</a>
+<li><a href="#orgde0e07e">Special Elements</a>
 <ul>
-<li><a href="#org22729f2">Source Code References</a></li>
-<li><a href="#org048026d">Mathematical Expressions</a></li>
-<li><a href="#org9a41e71">Keyboard Shortcuts</a></li>
+<li><a href="#orgc619fd7">Source Code References</a></li>
+<li><a href="#orgbb0c909">Mathematical Expressions</a></li>
+<li><a href="#org9541765">Keyboard Shortcuts</a></li>
 </ul>
 </li>
-<li><a href="#org2a7b731">Advanced Features</a>
+<li><a href="#orga01cc9c">Advanced Features</a>
 <ul>
-<li><a href="#org4bfd612">Property Drawers</a></li>
-<li><a href="#orgb63ab2a">Source Code Blocks with Options</a></li>
+<li><a href="#org3b5526b">Property Drawers</a></li>
+<li><a href="#org576d6a1">Source Code Blocks with Options</a></li>
 </ul>
 </li>
-<li><a href="#orgccd534c">Conclusion</a></li>
+<li><a href="#orgf22a13d">Conclusion</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgfe0415a" class="outline-2">
-<h2 id="orgfe0415a">Introduction</h2>
-<div class="outline-text-2" id="text-orgfe0415a">
+<div id="outline-container-org768e9f8" class="outline-2">
+<h2 id="org768e9f8">Introduction</h2>
+<div class="outline-text-2" id="text-org768e9f8">
 <p>
 This document demonstrates the comprehensive styling capabilities of the org-mode HTML export theme. It includes examples of all major org-mode elements and features.
 </p>
 </div>
-<div id="outline-container-orgd381069" class="outline-3">
-<h3 id="orgd381069">Text Formatting</h3>
-<div class="outline-text-3" id="text-orgd381069">
+<div id="outline-container-orge1c7dc8" class="outline-3">
+<h3 id="orge1c7dc8">Text Formatting</h3>
+<div class="outline-text-3" id="text-orge1c7dc8">
 <p>
 Here are examples of various text formatting options:
 </p>
@@ -333,9 +333,9 @@ Here are examples of various text formatting options:
 </ul>
 </div>
 </div>
-<div id="outline-container-orga1d8198" class="outline-3">
-<h3 id="orga1d8198">Links and References</h3>
-<div class="outline-text-3" id="text-orga1d8198">
+<div id="outline-container-orgd93b9a1" class="outline-3">
+<h3 id="orgd93b9a1">Links and References</h3>
+<div class="outline-text-3" id="text-orgd93b9a1">
 <ul class="org-ul">
 <li><a href="https://orgmode.org">External link to Org-Mode</a></li>
 <li><a href="README.md">Internal link to README</a></li>
@@ -345,25 +345,25 @@ Here are examples of various text formatting options:
 </div>
 </div>
 </div>
-<div id="outline-container-org4cdd3d4" class="outline-2">
-<h2 id="org4cdd3d4">Headings Hierarchy</h2>
-<div class="outline-text-2" id="text-org4cdd3d4">
+<div id="outline-container-org9f7355d" class="outline-2">
+<h2 id="org9f7355d">Headings Hierarchy</h2>
+<div class="outline-text-2" id="text-org9f7355d">
 </div>
-<div id="outline-container-org762de9f" class="outline-3">
-<h3 id="org762de9f">Second Level Heading</h3>
-<div class="outline-text-3" id="text-org762de9f">
+<div id="outline-container-orgf33f9b1" class="outline-3">
+<h3 id="orgf33f9b1">Second Level Heading</h3>
+<div class="outline-text-3" id="text-orgf33f9b1">
 </div>
 <ul class="org-ul">
-<li><a id="orgb25f4e0"></a>Third Level Heading<br />
+<li><a id="org4bfef6e"></a>Third Level Heading<br />
 <ul class="org-ul">
-<li><a id="orge43c0eb"></a>Fourth Level Heading<br />
+<li><a id="org1147777"></a>Fourth Level Heading<br />
 <ul class="org-ul">
-<li><a id="orgb6f6372"></a>Fifth Level Heading<br />
+<li><a id="org0c31a28"></a>Fifth Level Heading<br />
 <ul class="org-ul">
-<li><a id="org86bd7f9"></a>Sixth Level Heading<br />
+<li><a id="orgea2cc8c"></a>Sixth Level Heading<br />
 <ul class="org-ul">
-<li><a id="org4efd2d7"></a>Seventh Level Heading<br />
-<div class="outline-text-8" id="text-org4efd2d7">
+<li><a id="org26a6bc0"></a>Seventh Level Heading<br />
+<div class="outline-text-8" id="text-org26a6bc0">
 <p>
 This demonstrates all heading levels and their styling.
 </p>
@@ -380,13 +380,13 @@ This demonstrates all heading levels and their styling.
 </ul>
 </div>
 </div>
-<div id="outline-container-orgdf2e97e" class="outline-2">
-<h2 id="orgdf2e97e">Lists and Organization</h2>
-<div class="outline-text-2" id="text-orgdf2e97e">
+<div id="outline-container-org94596b3" class="outline-2">
+<h2 id="org94596b3">Lists and Organization</h2>
+<div class="outline-text-2" id="text-org94596b3">
 </div>
-<div id="outline-container-orgd9f9a61" class="outline-3">
-<h3 id="orgd9f9a61">Unordered Lists</h3>
-<div class="outline-text-3" id="text-orgd9f9a61">
+<div id="outline-container-org34d3414" class="outline-3">
+<h3 id="org34d3414">Unordered Lists</h3>
+<div class="outline-text-3" id="text-org34d3414">
 <ul class="org-ul">
 <li>First item</li>
 <li>Second item with <b>bold</b> text</li>
@@ -402,9 +402,9 @@ This demonstrates all heading levels and their styling.
 </ul>
 </div>
 </div>
-<div id="outline-container-org99a0486" class="outline-3">
-<h3 id="org99a0486">Ordered Lists</h3>
-<div class="outline-text-3" id="text-org99a0486">
+<div id="outline-container-org7a48183" class="outline-3">
+<h3 id="org7a48183">Ordered Lists</h3>
+<div class="outline-text-3" id="text-org7a48183">
 <ol class="org-ol">
 <li>First numbered item</li>
 <li>Second numbered item</li>
@@ -420,9 +420,9 @@ This demonstrates all heading levels and their styling.
 </ol>
 </div>
 </div>
-<div id="outline-container-orgeb67d8d" class="outline-3">
-<h3 id="orgeb67d8d">Mixed Lists</h3>
-<div class="outline-text-3" id="text-orgeb67d8d">
+<div id="outline-container-org048432f" class="outline-3">
+<h3 id="org048432f">Mixed Lists</h3>
+<div class="outline-text-3" id="text-org048432f">
 <ol class="org-ol">
 <li>First item
 <ul class="org-ul">
@@ -438,9 +438,9 @@ This demonstrates all heading levels and their styling.
 </ol>
 </div>
 </div>
-<div id="outline-container-org07a4160" class="outline-3">
-<h3 id="org07a4160">Definition Lists</h3>
-<div class="outline-text-3" id="text-org07a4160">
+<div id="outline-container-orgcac6420" class="outline-3">
+<h3 id="orgcac6420">Definition Lists</h3>
+<div class="outline-text-3" id="text-orgcac6420">
 <dl class="org-dl">
 <dt>Term 1</dt><dd>Definition of the first term</dd>
 <dt>Term 2</dt><dd>Definition of the second term with <b>formatting</b></dd>
@@ -453,9 +453,9 @@ This demonstrates all heading levels and their styling.
 <h2 id="tables">Tables</h2>
 <div class="outline-text-2" id="text-tables">
 </div>
-<div id="outline-container-org9978746" class="outline-3">
-<h3 id="org9978746">Basic Table</h3>
-<div class="outline-text-3" id="text-org9978746">
+<div id="outline-container-orgcb11d60" class="outline-3">
+<h3 id="orgcb11d60">Basic Table</h3>
+<div class="outline-text-3" id="text-orgcb11d60">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -515,9 +515,9 @@ This demonstrates all heading levels and their styling.
 </table>
 </div>
 </div>
-<div id="outline-container-orgc8ecbc9" class="outline-3">
-<h3 id="orgc8ecbc9">Table with Alignment</h3>
-<div class="outline-text-3" id="text-orgc8ecbc9">
+<div id="outline-container-orge1149ca" class="outline-3">
+<h3 id="orge1149ca">Table with Alignment</h3>
+<div class="outline-text-3" id="text-orge1149ca">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -558,13 +558,13 @@ This demonstrates all heading levels and their styling.
 </div>
 </div>
 </div>
-<div id="outline-container-orgbaf2cc2" class="outline-2">
-<h2 id="orgbaf2cc2">Code Examples</h2>
-<div class="outline-text-2" id="text-orgbaf2cc2">
+<div id="outline-container-org6e8f21f" class="outline-2">
+<h2 id="org6e8f21f">Code Examples</h2>
+<div class="outline-text-2" id="text-org6e8f21f">
 </div>
-<div id="outline-container-org1098963" class="outline-3">
-<h3 id="org1098963">SQL Query</h3>
-<div class="outline-text-3" id="text-org1098963">
+<div id="outline-container-orgcd85fcd" class="outline-3">
+<h3 id="orgcd85fcd">SQL Query</h3>
+<div class="outline-text-3" id="text-orgcd85fcd">
 <div class="org-src-container">
 <pre class="src src-sql"><span style="color: #7a808b;">-- </span><span style="color: #7a808b;">Complex SQL query example</span>
 <span style="color: #10b1fe;">SELECT</span> 
@@ -583,9 +583,9 @@ This demonstrates all heading levels and their styling.
 </div>
 </div>
 </div>
-<div id="outline-container-org80e6dba" class="outline-3">
-<h3 id="org80e6dba">Calculator Expressions</h3>
-<div class="outline-text-3" id="text-org80e6dba">
+<div id="outline-container-org28093d2" class="outline-3">
+<h3 id="org28093d2">Calculator Expressions</h3>
+<div class="outline-text-3" id="text-org28093d2">
 <div class="org-src-container">
 <pre class="src src-calc">M = 120 M_sun, r = 1 AU, v = sqrt(G M / r)
 circ = 2 pi r, t = circ / v
@@ -599,10 +599,10 @@ t = 0.09128881703 yr
 </pre>
 </div>
 </div>
-<div id="outline-container-orga7fd22e" class="outline-3">
-<h3 id="orga7fd22e">Example Block</h3>
-<div class="outline-text-3" id="text-orga7fd22e">
-<pre class="example" id="org12f327a">
+<div id="outline-container-org24af3aa" class="outline-3">
+<h3 id="org24af3aa">Example Block</h3>
+<div class="outline-text-3" id="text-org24af3aa">
+<pre class="example" id="orgc72341d">
 This is an example block that preserves formatting exactly as written.
 It can contain:
   - Indented text
@@ -616,10 +616,10 @@ It can contain:
 </pre>
 </div>
 </div>
-<div id="outline-container-orgee70720" class="outline-3">
-<h3 id="orgee70720">Verbatim Block</h3>
-<div class="outline-text-3" id="text-orgee70720">
-<div class="VERBATIM" id="org666604f">
+<div id="outline-container-org40657e2" class="outline-3">
+<h3 id="org40657e2">Verbatim Block</h3>
+<div class="outline-text-3" id="text-org40657e2">
+<div class="VERBATIM" id="orge9921c6">
 <p>
 This is a verbatim block.
 All formatting is preserved exactly.
@@ -631,9 +631,9 @@ No interpretation of org-mode syntax occurs here.
 </div>
 </div>
 </div>
-<div id="outline-container-orga03ed17" class="outline-3">
-<h3 id="orga03ed17">Shell Script</h3>
-<div class="outline-text-3" id="text-orga03ed17">
+<div id="outline-container-org9b4473c" class="outline-3">
+<h3 id="org9b4473c">Shell Script</h3>
+<div class="outline-text-3" id="text-org9b4473c">
 <div class="org-src-container">
 <pre class="src src-bash"><span style="color: #7a808b;">#</span><span style="color: #7a808b;">!/bin/</span><span style="color: #10b1fe;">bash</span>
 <span style="color: #ff6480;">echo</span> <span style="color: #f9c859;">"System Information:"</span>
@@ -657,9 +657,9 @@ total 48
 </pre>
 </div>
 </div>
-<div id="outline-container-org987f37b" class="outline-3">
-<h3 id="org987f37b">JavaScript Code</h3>
-<div class="outline-text-3" id="text-org987f37b">
+<div id="outline-container-orgd1784cb" class="outline-3">
+<h3 id="orgd1784cb">JavaScript Code</h3>
+<div class="outline-text-3" id="text-orgd1784cb">
 <div class="org-src-container">
 <pre class="src src-javascript"><span style="color: #7a808b;">// </span><span style="color: #7a808b;">Modern JavaScript example</span>
 <span style="color: #10b1fe;">const</span> <span style="color: #8bcdef;">fibonacci</span> = (n) =&gt; {
@@ -682,9 +682,9 @@ console.log(processData(person));
 </div>
 </div>
 </div>
-<div id="outline-container-org6c767c4" class="outline-3">
-<h3 id="org6c767c4">Python Code with Results</h3>
-<div class="outline-text-3" id="text-org6c767c4">
+<div id="outline-container-org9b53776" class="outline-3">
+<h3 id="org9b53776">Python Code with Results</h3>
+<div class="outline-text-3" id="text-org9b53776">
 <div class="org-src-container">
 <pre class="src src-python"><span style="color: #10b1fe;">import</span> numpy <span style="color: #10b1fe;">as</span> np
 <span style="color: #10b1fe;">import</span> matplotlib.pyplot <span style="color: #10b1fe;">as</span> plt
@@ -712,17 +712,17 @@ Integral of sin(x): 0.000000
 </div>
 </div>
 </div>
-<div id="outline-container-org23cf905" class="outline-2">
-<h2 id="org23cf905">Task Management</h2>
-<div class="outline-text-2" id="text-org23cf905">
+<div id="outline-container-org0815fd3" class="outline-2">
+<h2 id="org0815fd3">Task Management</h2>
+<div class="outline-text-2" id="text-org0815fd3">
 </div>
-<div id="outline-container-orgb420149" class="outline-3">
-<h3 id="orgb420149"><span class="todo TODO">TODO</span> Items</h3>
-<div class="outline-text-3" id="text-orgb420149">
+<div id="outline-container-orgb938ddf" class="outline-3">
+<h3 id="orgb938ddf"><span class="todo TODO">TODO</span> Items</h3>
+<div class="outline-text-3" id="text-orgb938ddf">
 </div>
 <ul class="org-ul">
-<li><a id="org8070e7c"></a><span class="todo TODO">TODO</span> Complete the documentation<br />
-<div class="outline-text-4" id="text-org8070e7c">
+<li><a id="org681a321"></a><span class="todo TODO">TODO</span> Complete the documentation<br />
+<div class="outline-text-4" id="text-org681a321">
 <ul class="org-ul">
 <li class="off"><code>[&#xa0;]</code> Write introduction</li>
 <li class="on"><code>[X]</code> Create examples</li>
@@ -731,8 +731,8 @@ Integral of sin(x): 0.000000
 </ul>
 </div>
 </li>
-<li><a id="org54016c0"></a><span class="done DONE">DONE</span> Implement theme toggle<br />
-<div class="outline-text-4" id="text-org54016c0">
+<li><a id="orga867c15"></a><span class="done DONE">DONE</span> Implement theme toggle<br />
+<div class="outline-text-4" id="text-orga867c15">
 <ul class="org-ul">
 <li class="on"><code>[X]</code> Add CSS variables</li>
 <li class="on"><code>[X]</code> Create toggle button</li>
@@ -740,15 +740,15 @@ Integral of sin(x): 0.000000
 </ul>
 </div>
 </li>
-<li><a id="org1cd3c8e"></a><span class="todo WAITING">WAITING</span> Review from team<br />
-<div class="outline-text-4" id="text-org1cd3c8e">
+<li><a id="org8cec026"></a><span class="todo WAITING">WAITING</span> Review from team<br />
+<div class="outline-text-4" id="text-org8cec026">
 <p>
 Waiting for feedback from the development team.
 </p>
 </div>
 </li>
-<li><a id="orgcdac847"></a><span class="todo SOMEDAY">SOMEDAY</span> Add more features<br />
-<div class="outline-text-4" id="text-orgcdac847">
+<li><a id="org3d392d8"></a><span class="todo SOMEDAY">SOMEDAY</span> Add more features<br />
+<div class="outline-text-4" id="text-org3d392d8">
 <p>
 Ideas for future enhancements:
 </p>
@@ -762,9 +762,9 @@ Ideas for future enhancements:
 </ul>
 </div>
 </div>
-<div id="outline-container-orgf0eff19" class="outline-2">
-<h2 id="orgf0eff19">Blockquotes and Citations</h2>
-<div class="outline-text-2" id="text-orgf0eff19">
+<div id="outline-container-orgc05643b" class="outline-2">
+<h2 id="orgc05643b">Blockquotes and Citations</h2>
+<div class="outline-text-2" id="text-orgc05643b">
 <blockquote>
 <p>
 This is a blockquote. It can contain multiple paragraphs and is useful for highlighting important information or quotes from other sources.
@@ -780,13 +780,13 @@ The blockquote can span multiple lines and includes proper styling to distinguis
 </blockquote>
 </div>
 </div>
-<div id="outline-container-org8fbb4e8" class="outline-2">
-<h2 id="org8fbb4e8">Timestamps and Scheduling</h2>
-<div class="outline-text-2" id="text-org8fbb4e8">
+<div id="outline-container-orge2acc01" class="outline-2">
+<h2 id="orge2acc01">Timestamps and Scheduling</h2>
+<div class="outline-text-2" id="text-orge2acc01">
 </div>
-<div id="outline-container-orgb13c4e1" class="outline-3">
-<h3 id="orgb13c4e1">Meeting Schedule</h3>
-<div class="outline-text-3" id="text-orgb13c4e1">
+<div id="outline-container-org6cfe88d" class="outline-3">
+<h3 id="org6cfe88d">Meeting Schedule</h3>
+<div class="outline-text-3" id="text-org6cfe88d">
 <ul class="org-ul">
 <li>Project kickoff: <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-01-15 Mon 09:00&gt;</span></span></li>
 <li>Weekly standup: <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-01-22 Mon 09:00 +1w&gt;</span></span></li>
@@ -795,37 +795,37 @@ The blockquote can span multiple lines and includes proper styling to distinguis
 </ul>
 </div>
 </div>
-<div id="outline-container-org1369bb8" class="outline-3">
-<h3 id="org1369bb8">Time Tracking</h3>
-<div class="outline-text-3" id="text-org1369bb8">
+<div id="outline-container-orgbbea87c" class="outline-3">
+<h3 id="orgbbea87c">Time Tracking</h3>
+<div class="outline-text-3" id="text-orgbbea87c">
 </div>
 </div>
 </div>
-<div id="outline-container-org2cab951" class="outline-2">
-<h2 id="org2cab951">Tags and Categories&#xa0;&#xa0;&#xa0;<span class="tag"><span class="example">example</span></span></h2>
-<div class="outline-text-2" id="text-org2cab951">
+<div id="outline-container-orgc0a0c57" class="outline-2">
+<h2 id="orgc0a0c57">Tags and Categories&#xa0;&#xa0;&#xa0;<span class="tag"><span class="example">example</span></span></h2>
+<div class="outline-text-2" id="text-orgc0a0c57">
 </div>
-<div id="outline-container-orgc2a3722" class="outline-3">
-<h3 id="orgc2a3722">Programming Languages&#xa0;&#xa0;&#xa0;<span class="tag"><span class="programming">programming</span></span></h3>
-<div class="outline-text-3" id="text-orgc2a3722">
+<div id="outline-container-org03f0e8b" class="outline-3">
+<h3 id="org03f0e8b">Programming Languages&#xa0;&#xa0;&#xa0;<span class="tag"><span class="programming">programming</span></span></h3>
+<div class="outline-text-3" id="text-org03f0e8b">
 </div>
 <ul class="org-ul">
-<li><a id="orgdddb80e"></a>Python&#xa0;&#xa0;&#xa0;<span class="tag"><span class="python">python</span>&#xa0;<span class="data">data</span></span><br />
-<div class="outline-text-4" id="text-orgdddb80e">
+<li><a id="org3bf539d"></a>Python&#xa0;&#xa0;&#xa0;<span class="tag"><span class="python">python</span>&#xa0;<span class="data">data</span></span><br />
+<div class="outline-text-4" id="text-org3bf539d">
 <p>
 Excellent for data science and web development.
 </p>
 </div>
 </li>
-<li><a id="org9afed45"></a>JavaScript&#xa0;&#xa0;&#xa0;<span class="tag"><span class="javascript">javascript</span></span><br />
-<div class="outline-text-4" id="text-org9afed45">
+<li><a id="org5d8524f"></a>JavaScript&#xa0;&#xa0;&#xa0;<span class="tag"><span class="javascript">javascript</span></span><br />
+<div class="outline-text-4" id="text-org5d8524f">
 <p>
 Essential for web development.
 </p>
 </div>
 </li>
-<li><a id="org99bf85c"></a>Rust&#xa0;&#xa0;&#xa0;<span class="tag"><span class="rust">rust</span>&#xa0;<span class="systems">systems</span></span><br />
-<div class="outline-text-4" id="text-org99bf85c">
+<li><a id="orgae6de0c"></a>Rust&#xa0;&#xa0;&#xa0;<span class="tag"><span class="rust">rust</span>&#xa0;<span class="systems">systems</span></span><br />
+<div class="outline-text-4" id="text-orgae6de0c">
 <p>
 Great for systems programming.
 </p>
@@ -833,20 +833,20 @@ Great for systems programming.
 </li>
 </ul>
 </div>
-<div id="outline-container-org1dda310" class="outline-3">
-<h3 id="org1dda310">Research Topics&#xa0;&#xa0;&#xa0;<span class="tag"><span class="research">research</span></span></h3>
-<div class="outline-text-3" id="text-org1dda310">
+<div id="outline-container-orgee33966" class="outline-3">
+<h3 id="orgee33966">Research Topics&#xa0;&#xa0;&#xa0;<span class="tag"><span class="research">research</span></span></h3>
+<div class="outline-text-3" id="text-orgee33966">
 </div>
 <ul class="org-ul">
-<li><a id="org2548323"></a>Machine Learning&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ai">ai</span>&#xa0;<span class="ml">ml</span></span><br />
-<div class="outline-text-4" id="text-org2548323">
+<li><a id="orgd7ace1e"></a>Machine Learning&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ai">ai</span>&#xa0;<span class="ml">ml</span></span><br />
+<div class="outline-text-4" id="text-orgd7ace1e">
 <p>
 Current focus on deep learning architectures.
 </p>
 </div>
 </li>
-<li><a id="org766c608"></a>Quantum Computing&#xa0;&#xa0;&#xa0;<span class="tag"><span class="quantum">quantum</span></span><br />
-<div class="outline-text-4" id="text-org766c608">
+<li><a id="org1d93580"></a>Quantum Computing&#xa0;&#xa0;&#xa0;<span class="tag"><span class="quantum">quantum</span></span><br />
+<div class="outline-text-4" id="text-org1d93580">
 <p>
 Exploring quantum algorithms and applications.
 </p>
@@ -855,21 +855,21 @@ Exploring quantum algorithms and applications.
 </ul>
 </div>
 </div>
-<div id="outline-container-org3a73562" class="outline-2">
-<h2 id="org3a73562">Special Elements</h2>
-<div class="outline-text-2" id="text-org3a73562">
+<div id="outline-container-orgde0e07e" class="outline-2">
+<h2 id="orgde0e07e">Special Elements</h2>
+<div class="outline-text-2" id="text-orgde0e07e">
 </div>
-<div id="outline-container-org22729f2" class="outline-3">
-<h3 id="org22729f2">Source Code References</h3>
-<div class="outline-text-3" id="text-org22729f2">
+<div id="outline-container-orgc619fd7" class="outline-3">
+<h3 id="orgc619fd7">Source Code References</h3>
+<div class="outline-text-3" id="text-orgc619fd7">
 <p>
 Here&rsquo;s how to reference code: see line 42 in <code class="src src-python">fibonacci.py</code> 
 </p>
 </div>
 </div>
-<div id="outline-container-org048026d" class="outline-3">
-<h3 id="org048026d">Mathematical Expressions</h3>
-<div class="outline-text-3" id="text-org048026d">
+<div id="outline-container-orgbb0c909" class="outline-3">
+<h3 id="orgbb0c909">Mathematical Expressions</h3>
+<div class="outline-text-3" id="text-orgbb0c909">
 <p>
 The quadratic formula: \(x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\)
 </p>
@@ -880,9 +880,9 @@ Block equation:
 </p>
 </div>
 </div>
-<div id="outline-container-org9a41e71" class="outline-3">
-<h3 id="org9a41e71">Keyboard Shortcuts</h3>
-<div class="outline-text-3" id="text-org9a41e71">
+<div id="outline-container-org9541765" class="outline-3">
+<h3 id="org9541765">Keyboard Shortcuts</h3>
+<div class="outline-text-3" id="text-org9541765">
 <ul class="org-ul">
 <li>Save file: <code>C-x C-s</code></li>
 <li>Export to HTML: <code>C-c C-e h h</code></li>
@@ -891,13 +891,13 @@ Block equation:
 </div>
 </div>
 </div>
-<div id="outline-container-org2a7b731" class="outline-2">
-<h2 id="org2a7b731">Advanced Features</h2>
-<div class="outline-text-2" id="text-org2a7b731">
+<div id="outline-container-orga01cc9c" class="outline-2">
+<h2 id="orga01cc9c">Advanced Features</h2>
+<div class="outline-text-2" id="text-orga01cc9c">
 </div>
-<div id="outline-container-org4bfd612" class="outline-3">
-<h3 id="org4bfd612">Property Drawers</h3>
-<div class="outline-text-3" id="text-org4bfd612">
+<div id="outline-container-org3b5526b" class="outline-3">
+<h3 id="org3b5526b">Property Drawers</h3>
+<div class="outline-text-3" id="text-org3b5526b">
 </div>
 <ul class="org-ul">
 <li><a id="config"></a>Configuration Settings<br />
@@ -906,11 +906,11 @@ Block equation:
 </li>
 </ul>
 </div>
-<div id="outline-container-orgb63ab2a" class="outline-3">
-<h3 id="orgb63ab2a">Source Code Blocks with Options</h3>
-<div class="outline-text-3" id="text-orgb63ab2a">
+<div id="outline-container-org576d6a1" class="outline-3">
+<h3 id="org576d6a1">Source Code Blocks with Options</h3>
+<div class="outline-text-3" id="text-org576d6a1">
 <div class="org-src-container">
-<pre class="src src-python" id="org9a35b54"><span style="color: #10b1fe;">import</span> pandas <span style="color: #10b1fe;">as</span> pd
+<pre class="src src-python" id="org891d820"><span style="color: #10b1fe;">import</span> pandas <span style="color: #10b1fe;">as</span> pd
 <span style="color: #10b1fe;">import</span> matplotlib.pyplot <span style="color: #10b1fe;">as</span> plt
 
 <span style="color: #7a808b;"># </span><span style="color: #7a808b;">Read data</span>
@@ -935,9 +935,9 @@ plt.close()
 </div>
 </div>
 </div>
-<div id="outline-container-orgccd534c" class="outline-2">
-<h2 id="orgccd534c">Conclusion</h2>
-<div class="outline-text-2" id="text-orgccd534c">
+<div id="outline-container-orgf22a13d" class="outline-2">
+<h2 id="orgf22a13d">Conclusion</h2>
+<div class="outline-text-2" id="text-orgf22a13d">
 <p>
 This comprehensive example demonstrates all the major org-mode elements that are styled by the theme. The combination of CSS variables, responsive design, and JavaScript functionality provides a modern, professional appearance for org-mode HTML exports.
 </p>
@@ -972,7 +972,7 @@ This is the second footnote that provides additional context.
 <div id="postamble" class="status">
 <p class="date">Date: 2025-07-06 Sunday</p>
 <p class="author">Author: ChongChong He</p>
-<p class="date">Created: 2025-07-06 Sun 01:44</p>
+<p class="date">Created: 2025-07-06 Sun 01:54</p>
 </div>
 </body>
 </html>

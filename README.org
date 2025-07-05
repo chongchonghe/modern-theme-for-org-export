@@ -48,7 +48,7 @@ Add this line at the top of your org file:
 Add these lines to your org file:
 
 #+begin_src org
-,#+HTML_HEAD: <link rel="stylesheet" href="path/to/org3.css" type="text/css" />
+,#+HTML_HEAD: <link rel="stylesheet" href="path/to/modernorg.css" type="text/css" />
 ,#+HTML_HEAD_EXTRA: <script src="path/to/theme-toggle.js"></script>
 #+end_src
 
@@ -58,7 +58,7 @@ Add these lines to your org file:
 3. Open the generated HTML file in a browser
 
 ** 🎨 Customization
-You can customize the theme by modifying the CSS variables in ~org3.css~:
+You can customize the theme by modifying the CSS variables in ~modernorg.css~:
 
 #+begin_src css
 :root {
@@ -85,23 +85,15 @@ You can customize the theme by modifying the CSS variables in ~org3.css~:
   - Mathematical expressions
   - And more!
 
-** 🤝 Contributing
-Contributions are welcome! Feel free to:
-- Report bugs
-- Suggest new features
-- Submit pull requests
-- Improve documentation
-
 ** 📄 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ** 🙏 Acknowledgments
-- Inspired by modern documentation themes
 - Built with Org-mode and Emacs
-- Thanks to all contributors!
+- Mostly written by AI models
 
 ** 📦 Project Structure
-- =org3.css= - Main CSS file with theme variables and styling
+- =modernorg.css= - Main CSS file with theme variables and styling
 - =theme-toggle.js= - JavaScript for theme switching and copy functionality
 - =default.setup= - Org-mode setupfile that includes both CSS and JS
 - =example.org= - Example file demonstrating all features
