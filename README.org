@@ -1,0 +1,94 @@
+#+SETUPFILE: default.setup
+#+TITLE: Org-Mode HTML Export Theme
+
+This directory contains a comprehensive theme for org-mode HTML exports with light/dark mode toggle and copy-to-clipboard functionality.
+
+** Preview
+#+attr_html: :width 400pt
+[[file:./screenshot-light.png]]
+#+attr_html: :width 400pt
+[[file:./screenshot-dark.png]]
+
+** Files
+- =org3.css= - The main CSS file with theme variables, styling, and copy button design
+- =theme-toggle.js= - JavaScript file that handles theme switching and copy functionality
+- =default.setup= - Org-mode setupfile that includes both CSS and JS files
+- =example.org= - Example org-mode file demonstrating various features
+- =example.html= - HTML export of example.org showing the theme in action
+- =README.md= - This documentation file
+
+** Features
+- *Toggle Button*: A circular button positioned in the top-right corner
+- *Responsive Design*: Adapts to mobile devices
+- *Icon Changes*: Shows moon (🌙) for light mode, sun (☀️) for dark mode
+- *Smooth Transitions*: Animated transitions between light and dark themes
+- *Theme Persistence*: Remembers your theme preference using localStorage
+- *Copy to Clipboard*: Automatic copy buttons on all code blocks
+
+** How to Use
+*** Method 1: Using the Setupfile
+1. *Add the setupfile to your org document:*
+
+#+begin_src org
+,#+SETUPFILE: /path/to/default.setup
+,#+TITLE: Your Document Title
+#+end_src
+
+2. [@2] *Export to HTML:* =C-c C-e h h= in Emacs
+
+The setupfile automatically includes both the CSS and JavaScript files in your HTML export.
+
+*** Method 2: Manual Setup (Recommended)
+If you prefer manual control, add these lines to your org file:
+
+#+begin_src org
+,#+HTML_HEAD: <link rel="stylesheet" href="/path/to/org3.css" type="text/css" />
+,#+HTML_HEAD_EXTRA: <script src="/path/to/theme-toggle.js"></script>
+#+end_src
+
+*** Example
+Open =example.html= in a web browser to see both the theme toggle and copy functionality in action. See =example.org= for a complete source code example with: - Various heading levels - Code blocks with syntax highlighting - Text formatting (bold, italic, underline, inline code) - Calculator expressions. Export =example.org= to see the theme in action.
+
+*** Full Org-Mode Workflow
+1. Open =example.org= in Emacs
+2. Export to HTML: =C-c C-e h h=
+3. Open the generated HTML file in a browser
+4. Test the features:
+   - Click the 🌙/☀️ button to toggle themes
+   - Hover over code blocks to see copy buttons
+   - Click copy buttons to test clipboard functionality
+
+*** Creating Your Own Documents
+1. Create a new =.org= file
+2. Add =#+SETUPFILE: /path/to/default.setup= at the top
+3. Write your content with =#+begin_src= blocks
+4. Export to HTML and enjoy the themed output!
+
+** Styled Org-Mode Elements
+This theme provides styling for all major org-mode export elements:
+
+*** Content Structure
+- *Headings*: All levels (H1-H7) with proper hierarchy
+- *Table of Contents*: Fixed sidebar with smooth scrolling
+- *Text Formatting*: Bold, italic, underline, strikethrough
+- *Links*: Internal and external links with hover effects
+
+*** Code and Technical Content
+- *Code Blocks*: =#+begin_src= with syntax highlighting support
+- *Inline Code*: Monospace formatting with background
+- *Examples*: =#+begin_example= blocks
+- *Verbatim*: =#+begin_verbatim= blocks
+
+*** Data Presentation
+- *Tables*: Styled headers and alternating row colors
+- *Lists*: Ordered and unordered lists with proper spacing
+- *Blockquotes*: Styled with left border and indentation
+
+*** Special Elements
+- *Todo Keywords*: TODO, DONE, etc. with distinct colors
+- *Timestamps*: Date/time formatting
+- *Tags*: Styled org-mode tags
+- *Priorities*: Priority indicators
+
+** Customization
+You can customize the theme colors by modifying the CSS variables in the ~:root~ and ~[data-theme="dark"]~ selectors in ~org3.css~.

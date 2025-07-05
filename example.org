@@ -1,0 +1,390 @@
+#+SETUPFILE: /Users/cche/Dropbox/_emacs/org-utils/org_export/eos/default.setup
+#+TITLE: Comprehensive Org-Mode Theme Example
+#+AUTHOR: ChongChong He
+#+DATE: 2025-07-06 Sunday
+#+DESCRIPTION: A comprehensive example showcasing all styled org-mode elements
+#+KEYWORDS: org-mode, html, export, theme, examples
+#+LANGUAGE: en
+
+* Introduction
+
+This document demonstrates the comprehensive styling capabilities of the org-mode HTML export theme. It includes examples of all major org-mode elements and features.
+
+** Text Formatting
+
+Here are examples of various text formatting options:
+
+- *Bold text* stands out clearly
+- /Italic text/ provides emphasis
+- _Underlined text_ is distinct
+- +Strikethrough text+ shows deletions
+- ~Inline code~ has monospace formatting
+- =Verbatim text= preserves formatting
+- Super^{script} and Sub_{script} work too
+
+** Links and References
+
+- [[https://orgmode.org][External link to Org-Mode]]
+- [[file:README.md][Internal link to README]]
+- [[#tables][Link to Tables section below]]
+- Plain URL: https://www.gnu.org/software/emacs/
+
+* Headings Hierarchy
+
+** Second Level Heading
+
+*** Third Level Heading
+
+**** Fourth Level Heading
+
+***** Fifth Level Heading
+
+****** Sixth Level Heading
+
+******* Seventh Level Heading
+
+This demonstrates all heading levels and their styling.
+
+* Lists and Organization
+
+** Unordered Lists
+
+- First item
+- Second item with *bold* text
+- Third item with /italic/ text
+  - Nested item
+  - Another nested item
+    - Deeply nested item
+- Fourth item with ~inline code~
+
+** Ordered Lists
+
+1. First numbered item
+2. Second numbered item
+3. Third numbered item
+   1. Nested numbered item
+   2. Another nested item
+      1. Deeply nested numbered item
+4. Fourth numbered item
+
+** Mixed Lists
+
+1. First item
+   - Nested bullet
+   - Another bullet
+2. Second item
+   1. Nested number
+   2. Another number
+3. Third item
+
+** Definition Lists
+
+- Term 1 :: Definition of the first term
+- Term 2 :: Definition of the second term with *formatting*
+- Long Term :: This is a longer definition that demonstrates how the styling handles multiple lines and various formatting options
+
+* Tables
+  :PROPERTIES:
+  :CUSTOM_ID: tables
+  :END:
+
+** Basic Table
+
+| Language | Paradigm     | Year | Popular |
+|----------+--------------+------+---------|
+| Python   | Multi        | 1991 | Yes     |
+| C        | Procedural   | 1972 | Yes     |
+| Haskell  | Functional   | 1990 | No      |
+| Java     | Object       | 1995 | Yes     |
+| Lisp     | Functional   | 1958 | No      |
+
+** Table with Alignment
+
+|   Number | Description           | Value |
+|----------+-----------------------+-------|
+|      <r> | <l>                   |   <r> |
+|        1 | First value           |  10.5 |
+|       42 | Answer to everything  | 100.0 |
+|      999 | Large number          |   0.1 |
+
+* Code Examples
+
+** SQL Query
+
+#+BEGIN_SRC sql
+-- Complex SQL query example
+SELECT 
+    u.name,
+    u.email,
+    COUNT(p.id) as post_count,
+    AVG(p.rating) as avg_rating
+FROM users u
+LEFT JOIN posts p ON u.id = p.user_id
+WHERE u.created_at > '2023-01-01'
+GROUP BY u.id, u.name, u.email
+HAVING COUNT(p.id) > 5
+ORDER BY avg_rating DESC, post_count DESC
+LIMIT 10;
+#+END_SRC
+
+** Calculator Expressions
+
+#+BEGIN_SRC calc :results output
+M = 120 M_sun, r = 1 AU, v = sqrt(G M / r)
+circ = 2 pi r, t = circ / v
+v in km/s, t in yr
+#+END_SRC
+
+#+RESULTS:
+: v = 326.2749517 km / s
+: t = 0.09128881703 yr
+
+** Example Block
+
+#+BEGIN_EXAMPLE
+This is an example block that preserves formatting exactly as written.
+It can contain:
+  - Indented text
+  - Special characters: & < > " '
+  - Code-like content without syntax highlighting
+  - ASCII art:
+    ┌─────────────┐
+    │  Example    │
+    │   Block     │
+    └─────────────┘
+#+END_EXAMPLE
+
+** Verbatim Block
+
+#+BEGIN_VERBATIM
+This is a verbatim block.
+All formatting is preserved exactly.
+No interpretation of org-mode syntax occurs here.
+*This will not be bold*
+~This will not be code~
+#+END_VERBATIM
+
+** Shell Script
+
+#+BEGIN_SRC bash :results output :exports both
+#!/bin/bash
+echo "System Information:"
+echo "=================="
+echo "Date: $(date)"
+echo "User: $(whoami)"
+echo "Working directory: $(pwd)"
+echo "Files in current directory:"
+ls -la | head -5
+#+END_SRC
+
+#+RESULTS:
+: System Information:
+: ==================
+: Date: Sun Jan 15 12:34:56 PST 2024
+: User: user
+: Working directory: /home/user/documents
+: Files in current directory:
+: total 48
+
+** JavaScript Code
+
+#+BEGIN_SRC javascript
+// Modern JavaScript example
+const fibonacci = (n) => {
+    if (n <= 1) return n;
+    return fibonacci(n - 1) + fibonacci(n - 2);
+};
+
+// Generate Fibonacci sequence
+const fibSequence = Array.from({length: 10}, (_, i) => fibonacci(i));
+console.log('Fibonacci sequence:', fibSequence);
+
+// Arrow function with destructuring
+const processData = ({name, age, city}) => {
+    return `${name} is ${age} years old and lives in ${city}`;
+};
+
+const person = {name: 'Alice', age: 30, city: 'New York'};
+console.log(processData(person));
+#+END_SRC
+
+** Python Code with Results
+
+#+BEGIN_SRC python :results output :exports both
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Generate sample data
+x = np.linspace(0, 2*np.pi, 100)
+y = np.sin(x)
+
+print("Sample data generated:")
+print(f"x range: {x.min():.2f} to {x.max():.2f}")
+print(f"y range: {y.min():.2f} to {y.max():.2f}")
+
+# Simple calculation
+result = np.trapz(y, x)
+print(f"Integral of sin(x): {result:.6f}")
+#+END_SRC
+
+#+RESULTS:
+: Sample data generated:
+: x range: 0.00 to 6.28
+: y range: -1.00 to 1.00
+: Integral of sin(x): 0.000000
+
+* Task Management
+
+** TODO Items
+
+*** TODO Complete the documentation
+    SCHEDULED: <2024-01-20 Sat>
+    - [ ] Write introduction
+    - [X] Create examples
+    - [ ] Add more code samples
+    - [ ] Review and finalize
+
+*** DONE Implement theme toggle
+    CLOSED: [2024-01-15 Mon 10:30]
+    - [X] Add CSS variables
+    - [X] Create toggle button
+    - [X] Add JavaScript functionality
+
+*** WAITING Review from team
+    SCHEDULED: <2024-01-25 Thu>
+    Waiting for feedback from the development team.
+
+*** SOMEDAY Add more features
+    Ideas for future enhancements:
+    - Print stylesheet
+    - Mobile optimizations
+    - Additional color themes
+
+* Blockquotes and Citations
+
+#+BEGIN_QUOTE
+This is a blockquote. It can contain multiple paragraphs and is useful for highlighting important information or quotes from other sources.
+
+The blockquote can span multiple lines and includes proper styling to distinguish it from regular paragraphs. It may include /italic/ or *bold* text as well.
+
+-- Attribution can be added at the end
+#+END_QUOTE
+
+* Timestamps and Scheduling
+
+** Meeting Schedule
+
+- Project kickoff: <2024-01-15 Mon 09:00>
+- Weekly standup: <2024-01-22 Mon 09:00 +1w>
+- Deadline: <2024-02-01 Thu>
+- Review period: <2024-01-25 Thu>--<2024-01-31 Wed>
+
+** Time Tracking
+
+CLOCK: [2024-01-15 Mon 08:00]--[2024-01-15 Mon 10:30] =>  2:30
+
+* Tags and Categories                                              :example:
+
+** Programming Languages                                        :programming:
+   
+*** Python                                                     :python:data:
+    Excellent for data science and web development.
+    
+*** JavaScript                                                  :javascript:
+    Essential for web development.
+    
+*** Rust                                                    :rust:systems:
+    Great for systems programming.
+
+** Research Topics                                              :research:
+
+*** Machine Learning                                               :ai:ml:
+    Current focus on deep learning architectures.
+    
+*** Quantum Computing                                          :quantum:
+    Exploring quantum algorithms and applications.
+
+* Special Elements
+
+** Footnotes
+
+This text has a footnote[fn:1] and another one[fn:2].
+
+** Source Code References
+
+Here's how to reference code: see line 42 in src_python[:exports code]{fibonacci.py} 
+
+** Mathematical Expressions
+
+The quadratic formula: $x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$
+
+Block equation:
+$$\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}$$
+
+** Keyboard Shortcuts
+
+- Save file: =C-x C-s=
+- Export to HTML: =C-c C-e h h=
+- Toggle theme: Click the 🌙/☀️ button
+
+* Advanced Features
+
+** Property Drawers
+
+*** Configuration Settings
+    :PROPERTIES:
+    :CUSTOM_ID: config
+    :CATEGORY: setup
+    :EFFORT:   2:00
+    :END:
+
+** Source Code Blocks with Options
+
+#+NAME: data-processing
+#+BEGIN_SRC python :var data="sample.csv" :results file :exports both
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Read data
+df = pd.read_csv(data) if data.endswith('.csv') else pd.DataFrame({'x': [1,2,3], 'y': [4,5,6]})
+
+# Create visualization
+plt.figure(figsize=(8, 6))
+plt.plot(df.index, df.iloc[:, 0], 'b-', label='Data')
+plt.xlabel('Index')
+plt.ylabel('Value')
+plt.title('Data Visualization')
+plt.legend()
+plt.grid(True, alpha=0.3)
+plt.tight_layout()
+
+# Save plot
+plt.savefig('output.png', dpi=150)
+plt.close()
+return 'output.png'
+#+END_SRC
+
+** Include Files
+
+---start of README.md
+
+#+INCLUDE: "README.md" :lines "1-10"
+
+---end of README.md
+
+* Conclusion
+
+This comprehensive example demonstrates all the major org-mode elements that are styled by the theme. The combination of CSS variables, responsive design, and JavaScript functionality provides a modern, professional appearance for org-mode HTML exports.
+
+Key features showcased:
+- Light/dark theme toggle
+- Copy-to-clipboard functionality for code blocks
+- Responsive design for various screen sizes
+- Comprehensive styling for all org-mode elements
+- Professional typography and spacing
+
+* Footnotes
+
+[fn:1] This is the first footnote with some explanatory text.
+
+[fn:2] This is the second footnote that provides additional context.
