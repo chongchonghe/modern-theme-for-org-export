@@ -1,4 +1,4 @@
-#+SETUPFILE: /Users/cche/Dropbox/_emacs/org-utils/org_export/eos/default.setup
+#+SETUPFILE: default.setup
 #+TITLE: Comprehensive Org-Mode Theme Example
 #+AUTHOR: ChongChong He
 #+DATE: 2025-07-06 Sunday

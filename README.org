@@ -28,7 +28,7 @@ A modern, responsive theme for Org-mode HTML exports featuring light/dark mode t
 *** Installation
 1. Clone this repository:
    #+begin_src shell
-   git clone https://github.com/username/modern-theme-for-org-export.git
+   git clone https://github.com/chongchonghe/modern-theme-for-org-export.git
    #+end_src
 
 2. Copy the files to your Org-mode setup directory:
