@@ -364,14 +364,6 @@ plt.close()
 return 'output.png'
 #+END_SRC
 
-** Include Files
-
----start of README.md
-
-#+INCLUDE: "README.md" :lines "1-10"
-
----end of README.md
-
 * Conclusion
 
 This comprehensive example demonstrates all the major org-mode elements that are styled by the theme. The combination of CSS variables, responsive design, and JavaScript functionality provides a modern, professional appearance for org-mode HTML exports.
