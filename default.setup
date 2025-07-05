@@ -2,8 +2,8 @@
 
 #+LANGUAGE: en
 #+PROPERTY: header-args :results code replace :exports both :noweb yes :tangle no
-#+HTML_HEAD: <link rel="stylesheet" href="modernorg.css" type="text/css" />
-#+HTML_HEAD_EXTRA: <script src="theme-toggle.js"></script>
+#+HTML_HEAD: <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/chongchonghe/modern-theme-for-org-export@main/modernorg.css" />
+#+HTML_HEAD_EXTRA: <script src="https://cdn.jsdelivr.net/gh/chongchonghe/modern-theme-for-org-export@main/theme-toggle.js"></script>
 #+EXPORT_EXCLUDE_TAGS: noexport
 #+OPTIONS: H:2 num:nil toc:t \\n:nil ::t |:t ^:{} -:t f:t *:t
 #+OPTIONS: d:(HIDE) tags:not-in-toc
